@@ -14,3 +14,10 @@ While one can just use any photogenic or any other art style to generate the ima
 Therefore the author variable is added into the code and prompt.
 
 The system is aiming to use AI to assist literature study with a poem as example. To section the poem for more meaningful image output can have different methods rather than just by sentence stops. For this part, I would appreciate if any literature educators can add some advice so to improve the project.
+
+Result of the prompt "Create a photorealistic image that captures {}'s signature style and tone, inspired by the following line of the poem:\n\n{}"
+
+Result of the prompt the prompt "Create a image that based on art style of {}'s the lived period and captured his literature signature style and tone, inspired by the following line of the poem:\n\n{}"
+
+
+
