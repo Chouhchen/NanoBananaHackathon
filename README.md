@@ -15,9 +15,41 @@ Therefore the author variable is added into the code and prompt.
 
 The system is aiming to use AI to assist literature study with a poem as example. To section the poem for more meaningful image output can have different methods rather than just by sentence stops. For this part, I would appreciate if any literature educators can add some advice so to improve the project.
 
+Here shows example of generating images from 
+"I Wandered Lonely as a Cloud" by William Wordsworth.
+
+""""""""""""""""""""
+I wandered lonely as a Cloud
+That floats on high o'er Vales and Hills,
+When all at once I saw a crowd
+A host of dancing Daffodils;
+Along the Lake, beneath the trees,
+Ten thousand dancing in the breeze.
+
+The waves beside them danced, but they
+Outdid the sparkling waves in glee: --
+A poet could not but be gay
+In such a laughing company:
+I gazed—and gazed—but little thought
+What wealth the show to me had brought:
+
+For oft when on my couch I lie
+In vacant or in pensive mood,
+They flash upon that inward eye
+Which is the bliss of solitude,
+And then my heart with pleasure fills,
+And dances with the Daffodils.
+"""""""""""""""
+
 Result of the prompt "Create a photorealistic image that captures {}'s signature style and tone, inspired by the following line of the poem:\n\n{}"
 
+<img width="1024" height="1024" alt="Prompt1_image2" src="https://github.com/user-attachments/assets/0ca7cac7-4cb8-4f02-8ad7-82d648b6a569" />
+<img width="1024" height="1024" alt="Prompt1_image1" src="https://github.com/user-attachments/assets/b43f5775-b959-45ce-b6c0-83842ec02d79" />
+
+
 Result of the prompt the prompt "Create a image that based on art style of {}'s the lived period and captured his literature signature style and tone, inspired by the following line of the poem:\n\n{}"
+<img width="1024" height="1024" alt="Prompt2_image2" src="https://github.com/user-attachments/assets/7f0a9144-0b87-490c-a54c-26209a205be6" />
+<img width="1024" height="1024" alt="Prompt2_image1" src="https://github.com/user-attachments/assets/29e29066-0d2a-48c7-945d-2d37fdd97767" />
 
 
 
