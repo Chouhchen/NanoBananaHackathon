@@ -1,0 +1,46 @@
+import os
+from google import genai
+from PIL import Image
+from io import BytesIO
+from IPython.display import display
+
+# --- IMPORTANT ---
+# Paste your API key here. For better security, we recommend using environment variables.
+# For example: API_KEY=os.environ.get("GEMINI_API_KEY")
+API_KEY = " "
+# -----------------
+
+# Configure the client with your API key
+client = genai.Client(api_key=API_KEY)
+
+# Get the poem and author input from the user
+poem = input("Enter the full text of the poem: ")
+author = input("Enter the name of the poet: ")
+
+# Split the poem into sections (by sentence or line)
+poem_sections = [line.strip() for line in poem.split('.') if line.strip()]
+
+# The base prompt
+base_prompt = "Create a photorealistic image that captures {}'s signature style and tone, inspired by the following line of the poem:\n\n{}"
+# Generate the prompts
+prompts = [base_prompt.format(author, section) for section in poem_sections]
+
+print("Generating images...")
+
+for i, prompt in enumerate(prompts):
+    # Call the API to generate the image
+    response = client.models.generate_content(
+        model="gemini-2.5-flash-image-preview",
+        contents=prompt,
+    )
+
+    image_parts = [
+        part.inline_data.data
+        for part in response.candidates[0].content.parts
+        if part.inline_data
+    ]
+
+    if image_parts:
+        image = Image.open(BytesIO(image_parts[0]))
+        image.save(f'{author.replace(" ", "_")}_poem_section_{i+1}.png')
+        display(image)
