@@ -56,5 +56,7 @@ Result of the prompt the prompt "Create a image that based on art style of {}'s 
 <img width="512" height="1024" alt="Prompt2_image1" src="https://github.com/user-attachments/assets/29e29066-0d2a-48c7-945d-2d37fdd97767" />
 <img width="512" height="1024" alt="Prompt2_image2" src="https://github.com/user-attachments/assets/7f0a9144-0b87-490c-a54c-26209a205be6" />
 
+This project explore the potential of apply AI image generation to assist the teaching and learning of literature study. Here use a classical poem of high school literature study as an example. While we use stentance stops "." as section condition, there are many other ways to section the poem. In addition, there are many ways to deep dive into a literature piece, such as author background, society theme of the era, decompose underlining meaning and different wording and so on. An literature education background collaboration would be very much welcomed to bring this project to reach full potential.
+
 
 
